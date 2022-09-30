@@ -1,0 +1,53 @@
+.container {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.container:hover {
+    background: chartreuse;
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    /* opacity: 0; */
+    /* transition: 0.35s opacity; */
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.container:hover h1 {
+    /* opacity: 1; */
+    opacity: 1;
+}
+
+body {
+    height: 100vh;    /* taille de l'écran  verticale */ 
+    width: 100vw;
+    margin: 0;
+    position: fixed;
+}
+
+body:hover .container {
+    background: violet;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+body:hover h1 {
+    opacity: 1;
+    transform: rotate(360deg);
+    transition: 1s;
+    transition-delay: 1s;
+}

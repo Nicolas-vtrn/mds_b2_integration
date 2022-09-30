@@ -1,0 +1,60 @@
+.container {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.containerblue {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.35s ease-in-out;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+.bigcontainer {
+    display: flex;
+    flex-direction: column;
+}
+.bigcontainer .container {
+    width: 200px;
+    height: 200px;
+}
+
+/* @media screen and (min-width: 700px){
+    .container {
+        background-color: yellow;
+        width: 100px;
+    }
+} */
+
+/* @media screen and (min-width: 1024px) {
+    .container {
+        background-color: green;
+        width: 300px;
+    }
+} */
+
+@media screen and (min-width: 1000px) {
+    .bigcontainer {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .containerblue {
+        background-color: blue;
+    }
+}
+

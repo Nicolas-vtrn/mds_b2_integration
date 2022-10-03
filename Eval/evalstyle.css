@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@font-face{
+    font-family: DrukCyr-Medium;
+    src: url("/Eval/DrukCyr-Medium.ttf") format('truetype');
+}
+@font-face{
+    font-family: montserrat;
+    src: url("/Eval/Montserrat-Italic.ttf") ;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.3em;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 60px;
+    position: relative;
+}
+.navbar ul li a{
+    font-family: DrukCyr-Medium;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #5cd1ff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+.contact{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 60px;
+    position: relative;
+}
+.navbar ul .contact li a {
+    color: black;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+    padding: 10px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFF;
+}
+.content p{
+    font-family: DrukCyr-Medium;
+    margin: 50px auto;
+    font-weight: 100;
+    line-height: 10px;
+    letter-spacing: 0.5em;
+    font-size: 5em;
+}
+.content span{
+    font-family: montserrat;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 2.5em;
+    letter-spacing: 0.8em;
+}
+.trait1{
+    border-left:rgb(255, 255, 255);
+    height: 23%;
+    width: 0.1vw;
+    border-width: 0;
+    color: white;
+    background-color: white;
+    left: 5%;
+    position: absolute;
+    margin-top: 0%;
+}
+.trait2{
+    border-left:rgb(255, 255, 255);
+    height: 23%;
+    width: 0.1vw;
+    border-width: 0;
+    color: white;
+    background-color: white;
+    left: 5%;
+    position: absolute;
+    margin-top: 24%;
+}
+.media{
+    width: 35px;
+    height: 35px;
+    left: 3.85%;
+    position: absolute;
+    margin-top: 14%;
+    display: flex;
+    flex-direction: column;
+}
